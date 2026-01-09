@@ -20,7 +20,7 @@
     body {
       background-color: #fff;
       color: var(--cinza);
-      line-height: 1.6;
+      line-height: 1.0;
     }
 
     header {
