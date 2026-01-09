@@ -1,7 +1,9 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Funilaria e Pintura Profissional</title>
 
   <style>
     :root {
@@ -11,8 +13,8 @@
     }
 
     * {
-      margin: 1;
-      padding: 1;
+      margin: 0;
+      padding: 0;
       box-sizing: border-box;
       font-family: Arial, Helvetica, sans-serif;
     }
@@ -20,7 +22,7 @@
     body {
       background-color: #fff;
       color: var(--cinza);
-      line-height: 0.0;
+      line-height: 1.6;
     }
 
     header {
@@ -63,7 +65,7 @@
       max-width: 500px;
     }
 
-       .hero a {
+    .hero a {
       background: var(--verde);
       color: #fff;
       padding: 15px 25px;
@@ -154,14 +156,14 @@
 <body>
 
 <header>
-  <h1>Pinheiro e Silva Funilaria & Pintura</h1>
+  <h1>Funilaria & Pintura</h1>
   <a href="#contato">Orçamento</a>
 </header>
 
 <section class="hero">
   <h2>Funilaria e Pintura Automotiva de Qualidade</h2>
   <p>Recuperamos, pintamos e deixamos seu veículo como novo, com acabamento profissional e preço justo.</p>
-  <a href="https://wa.me/5511967966476" target="_blank">Falar no WhatsApp</a>
+  <a href="https://wa.me/5500000000000" target="_blank">Falar no WhatsApp</a>
 </section>
 
 <section class="sobre">
@@ -169,7 +171,7 @@
   <p>
     Somos uma empresa especializada em funilaria e pintura automotiva,
     atendendo veículos de pequeno e médio porte. Trabalhamos com seriedade,
-    transparência e compromisso com o cliente, desde 1990.
+    transparência e compromisso com o cliente.
   </p>
 </section>
 
@@ -202,14 +204,14 @@
 <section class="cta" id="contato">
   <h3>Solicite um Orçamento Agora Mesmo</h3>
   <p>Entre em contato e tire todas as suas dúvidas.</p>
-  <a href="https://wa.me/5511967966476" target="_blank">Chamar no WhatsApp</a>
+  <a href="https://wa.me/5500000000000" target="_blank">Chamar no WhatsApp</a>
 </section>
 
 <footer>
   © 2026 Funilaria e Pintura — Todos os direitos reservados
 </footer>
 
-<a class="whatsapp" href="https://wa.me/55119667966476" target="_blank">
+<a class="whatsapp" href="https://wa.me/5500000000000" target="_blank">
   WhatsApp
 </a>
 
