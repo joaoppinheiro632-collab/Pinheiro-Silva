@@ -49,16 +49,9 @@
     }
 
     .hero {
-      min-height: 100vh;
-      width: 100%;
       background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
       url("https://neycostaautocenter.com.br/wp-content/uploads/2023/10/service-worker-painting-car-auto-service1.jpg") center/cover;
-      color: #fff;
-      background-size: cover;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 0 10%;
+      padding: 120px 10%;
     }
 
     .hero h2 {
