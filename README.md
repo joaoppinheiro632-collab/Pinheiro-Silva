@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -11,6 +12,7 @@
       --cinza-claro: #f2f2f2;
     }
 
+    /* Reset para tirar qualquer espaço em branco do navegador */
     * {
       margin: 0;
       padding: 0;
@@ -19,20 +21,25 @@
     }
 
     body {
-      background-color: #fff;
+      background-color: var(--cinza-claro); /* Cor de fundo padrão */
       color: var(--cinza);
       line-height: 1.6;
+      width: 100%;
+      overflow-x: hidden;
     }
 
+    /* Header ocupando a largura total */
     header {
       background: var(--cinza);
       color: #fff;
-      padding: 20px 10%;
+      padding: 20px 5%;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      width: 100%;
     }
 
+    /* Título sem link */
     header h1 {
       font-size: 1.4rem;
       color: var(--verde);
@@ -47,43 +54,55 @@
       border-radius: 4px;
     }
 
+    /* Hero Section (Banner principal) */
     .hero {
       background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
-      url("https://neycostaautocenter.com.br/wp-content/uploads/2023/10/service-worker-painting-car-auto-service1.jpg") center/cover;
+      url("https://neycostaautocenter.com.br/wp-content/uploads/2023/10/service-worker-painting-car-auto-service1.jpg") center/cover no-repeat;
       color: #fff;
-      padding: 120px 10%;
+      padding: 120px 5%;
+      width: 100%;
+      text-align: left;
     }
 
     .hero h2 {
       font-size: 2.5rem;
-      max-width: 600px;
+      max-width: 700px;
     }
 
     .hero p {
       margin: 20px 0;
-      max-width: 500px;
-    }
-
-    .hero a {
-      background: var(--verde);
-      color: #fff;
-      padding: 15px 25px;
-      text-decoration: none;
-      border-radius: 5px;
+      max-width: 550px;
       font-size: 1.1rem;
     }
 
-    section {
-      padding: 80px 10%;
+    .hero a {
+      display: inline-block;
+      background: var(--verde);
+      color: #fff;
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      font-weight: bold;
     }
 
-    .sobre, .servicos {
+    /* Seções gerais */
+    section {
+      padding: 80px 5%;
+      width: 100%;
+    }
+
+    .sobre {
+      background: #fff;
+    }
+
+    .servicos {
       background: var(--cinza-claro);
     }
 
     section h3 {
       font-size: 2rem;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
       color: var(--verde);
     }
 
@@ -98,7 +117,7 @@
       background: #fff;
       padding: 30px;
       border-radius: 6px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
 
     .card h4 {
@@ -106,48 +125,55 @@
       color: var(--cinza);
     }
 
+    /* Seção de Orçamento (CTA) */
     .cta {
       background: var(--verde);
       color: #fff;
       text-align: center;
-      padding: 80px 10%;
+      padding: 80px 5%;
+      width: 100%;
     }
 
+    /* Título sem link */
     .cta h3 {
       color: #fff;
+      font-size: 2.2rem;
+      margin-bottom: 10px;
     }
 
     .cta a {
       display: inline-block;
-      margin-top: 20px;
+      margin-top: 25px;
       background: #fff;
       color: var(--verde);
-      padding: 15px 30px;
+      padding: 15px 40px;
       text-decoration: none;
       font-weight: bold;
-      border-radius: 5px;
+      border-radius: 50px;
+      font-size: 1.2rem;
     }
 
     footer {
       background: var(--cinza);
       color: #fff;
       text-align: center;
-      padding: 20px;
+      padding: 30px 20px;
       font-size: 0.9rem;
     }
 
-    /* WhatsApp */
+    /* Botão Flutuante do WhatsApp */
     .whatsapp {
       position: fixed;
       bottom: 20px;
       right: 20px;
       background: #25d366;
       color: #fff;
-      padding: 15px 18px;
+      padding: 15px 25px;
       border-radius: 50px;
       text-decoration: none;
       font-weight: bold;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      z-index: 1000;
     }
   </style>
 </head>
@@ -167,7 +193,7 @@
 
 <section class="sobre">
   <h3>Sobre a Empresa</h3>
-  <p>
+  <p style="max-width: 900px;">
     Somos uma empresa especializada em funilaria e pintura automotiva,
     atendendo veículos de pequeno e médio porte. Trabalhamos com seriedade,
     transparência e compromisso com o cliente.
@@ -176,33 +202,29 @@
 
 <section class="servicos">
   <h3>Nossos Serviços</h3>
-
   <div class="servicos-grid">
     <div class="card">
       <h4>Funilaria</h4>
       <p>Reparos em lataria, amassados, colisões e recuperação estrutural.</p>
     </div>
-
     <div class="card">
       <h4>Pintura Automotiva</h4>
-      <p>Pintura completa ou parcial, com excelente acabamento.</p>
+      <p>Pintura completa ou parcial, com excelente acabamento e cor fiel.</p>
     </div>
-
     <div class="card">
       <h4>Polimento e Estética</h4>
-      <p>Polimento técnico e revitalização da pintura.</p>
+      <p>Polimento técnico e revitalização para devolver o brilho original.</p>
     </div>
-
     <div class="card">
       <h4>Orçamento Rápido</h4>
-      <p>Atendimento rápido e orçamento sem compromisso.</p>
+      <p>Atendimento ágil para você não perder tempo.</p>
     </div>
   </div>
 </section>
 
 <section class="cta" id="contato">
   <h3>Solicite um Orçamento Agora Mesmo</h3>
-  <p>Entre em contato e tire todas as suas dúvidas.</p>
+  <p>Entre em contato e tire todas as suas dúvidas com nossa equipe.</p>
   <a href="https://wa.me/5500000000000" target="_blank">Chamar no WhatsApp</a>
 </section>
 
